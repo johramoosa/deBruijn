@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Decoy_Generation_Enzyme_pdf_mem_clean">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Decoy_Generation_Enzyme_pdf_mem_clean.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
