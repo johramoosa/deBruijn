@@ -31,7 +31,7 @@ Running de Bruijn decoy generator
 
 - Run the project from the IDE or
 
-### Run from command line
+### Command line
 
-- java -jar "DIRECTORY OF THE DEBRUIJN-MASTER\dist\deBruijn.jar"
+- Run: java -jar "DIRECTORY OF THE DEBRUIJN-MASTER\dist\deBruijn.jar --input <.fasta> [optional arguments]"
 
