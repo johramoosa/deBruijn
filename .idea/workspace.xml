@@ -14,6 +14,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XVeCSN1miySAzmqWZL40OB0I2B" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,7 +29,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/dbd/deBruijn-master/deBruijn-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -57,6 +60,10 @@
     <configuration />
   </component>
   <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Notifications" timestamp="1581707745864">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1581707745864" />
     <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581651775068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -65,10 +72,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="168" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1536.824@0.0.1536.824" timestamp="1581355499648" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1581660350197">
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1581708239485">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581660350197" />
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581708239485" />
     <state x="651" y="306" width="258" height="211" key="Github.ShareDialog" timestamp="1581659482397">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -89,14 +96,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="181" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581654695259" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1581660605358">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1581707754899">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581660605358" />
-    <state x="470" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1581654850478">
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1581707754899" />
+    <state x="470" y="237" key="com.intellij.ide.util.TipDialog" timestamp="1581707479086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="470" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581654850478" />
+    <state x="470" y="237" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1581707479086" />
     <state x="498" y="306" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581355498445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

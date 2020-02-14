@@ -2,9 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2020-02-14T04:30:13.232950Z</date>
-  <millis>1581654613232</millis>
-  <nanos>950000</nanos>
+  <date>2020-02-14T14:39:37</date>
+  <millis>1581709177245</millis>
   <sequence>0</sequence>
   <logger>deBruijn.deBruijn</logger>
   <level>FINE</level>
@@ -14,9 +13,8 @@
   <message>Finer logged</message>
 </record>
 <record>
-  <date>2020-02-14T04:30:13.248582600Z</date>
-  <millis>1581654613248</millis>
-  <nanos>582600</nanos>
+  <date>2020-02-14T14:39:37</date>
+  <millis>1581709177261</millis>
   <sequence>1</sequence>
   <logger>deBruijn.deBruijn</logger>
   <level>FINER</level>
@@ -24,44 +22,5 @@
   <method>getLoggerFile</method>
   <thread>1</thread>
   <message>Finest example on LOGGER handler completed.</message>
-</record>
-<record>
-  <date>2020-02-14T04:30:16.776506900Z</date>
-  <millis>1581654616776</millis>
-  <nanos>506900</nanos>
-  <sequence>2</sequence>
-  <logger>deBruijn.deBruijn</logger>
-  <level>FINER</level>
-  <class>deBruijn.deBruijn</class>
-  <method>print_probability</method>
-  <thread>1</thread>
-  <message>Cumulative probability
-L 0.11300585964395284
-S 0.2090232505916209
-E 0.2894976852615385
-A 0.36877805645139716
-G 0.44378644202067596
-V 0.5120945474472002
-P 0.5772005893384704
-T 0.6397747989093703
-Q 0.6943601056907794
-D 0.7486012946052506
-I 0.7973327699163295
-F 0.8381470297222001
-N 0.8784736553247018
-Y 0.9082647547033144
-H 0.9380305248898535
-C 0.9635402819687248
-M 0.9857220856472606
-W 0.999998157017741
-U 0.9999999054880894
-X 0.9999999054880894
-B 0.9999999054880894
-J 0.9999999054880894
-O 0.9999999054880894
-Z 0.9999999054880894
- 
-last probability = 0.9999999054880894
-</message>
 </record>
 </log>
