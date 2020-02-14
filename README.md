@@ -1,5 +1,5 @@
 # deBruijn
-de Bruijn decoy generator
+The project takes target database (.fasta) file as input and generates a de Bruijn decoy (.fasta) file and a target+decoy concatenated (.fasta) file.
 
 
 
