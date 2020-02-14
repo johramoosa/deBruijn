@@ -35,5 +35,5 @@ Running de Bruijn decoy generator
 
 - Build: ant -f "DIRECTORY OF THE DEBRUIJN-MASTER" -Dnb.internal.action.name=rebuild clean jar
 
-- Run: java -jar "DIRECTORY OF THE DEBRUIJN-MASTER\dist\deBruijn.jar --input <.fasta> [optional arguments]"
+- Run: java -jar "DIRECTORY OF THE DEBRUIJN-MASTER/dist/deBruijn.jar --input <*.fasta> [optional arguments]"
 
