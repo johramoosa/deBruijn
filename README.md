@@ -27,7 +27,9 @@ Running de Bruijn decoy generator
 
 - Download the ZIP file and unzip deBruijn-master.zip
 
-- Open the project in an IDE (e.g., IntelliJ or NetBeans), build and run the project
+- Open the project in an IDE (e.g., IntelliJ or NetBeans), build the project
+
+- Run the project from the IDE or
 
 ### Run from command line
 
