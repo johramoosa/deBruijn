@@ -29,7 +29,7 @@ Running de Bruijn decoy generator
 
 - Open the project in an IDE (e.g., IntelliJ or NetBeans), build and run the project
 
-## Run from command line
+### Run from command line
 
 - java -jar "DIRECTORY OF THE DEBRUIJN-MASTER\dist\deBruijn.jar"
 
