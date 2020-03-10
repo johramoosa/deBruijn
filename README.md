@@ -25,15 +25,7 @@ de Bruijn decoy parameters
 Running de Bruijn decoy generator
 ---------------------------------
 
-- Download the ZIP file and unzip deBruijn-master.zip
+- Download the ZIP file and unzip deBruijn-master.zip (NB: Saving the .jar file using save link as ... may result in a corrupted .jar file.)
 
-- Open the project in an IDE (e.g., IntelliJ or NetBeans), build the project
-
-- Run the project from the IDE or
-
-### Command line
-
-- Build: ant -f "DIRECTORY OF THE DEBRUIJN-MASTER" -Dnb.internal.action.name=rebuild clean jar
-
-- Run: java -jar "DIRECTORY OF THE DEBRUIJN-MASTER/dist/deBruijn.jar --input <*.fasta> [optional arguments]"
+- Run: java -jar "DIRECTORY OF THE DEBRUIJN-MASTER/deBruijn.jar --input <*.fasta> [optional arguments]"
 
