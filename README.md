@@ -11,7 +11,7 @@ de Bruijn decoy parameters
 
 -  **--input <.fasta>** 
 
-#### Optinal arguments:
+#### Optional arguments:
 
 -  **[--output <.fasta>]**
 
