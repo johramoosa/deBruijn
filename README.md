@@ -1,5 +1,5 @@
 # deBruijn
-de Bruijn decoy generator
+The project takes target database (.fasta) file as input and generates a de Bruijn decoy (.fasta) file and a target+decoy concatenated (.fasta) file.
 
 
 
@@ -11,7 +11,7 @@ de Bruijn decoy parameters
 
 -  **--input <.fasta>** 
 
-#### Optinal arguments:
+#### Optional arguments:
 
 -  **[--output <.fasta>]**
 
@@ -25,11 +25,7 @@ de Bruijn decoy parameters
 Running de Bruijn decoy generator
 ---------------------------------
 
-- Download the ZIP file and unzip deBruijn-master.zip
+- Download the ZIP file and unzip deBruijn-master.zip (NB: Saving the .jar file using save link as ... may result in a corrupted .jar file.)
 
-- Open the project in an IDE (e.g., IntelliJ or NetBeans), build and run the project
-
-### Run from command line
-
-- java -jar "DIRECTORY OF THE DEBRUIJN-MASTER\dist\deBruijn.jar"
+- Run: java -jar "DIRECTORY OF THE DEBRUIJN-MASTER/deBruijn.jar --input <*.fasta> [optional arguments]"
 
