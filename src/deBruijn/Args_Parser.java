@@ -1,6 +1,9 @@
 package deBruijn;
 
+import java.io.File;
 import java.util.HashMap;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class Args_Parser {
 
@@ -17,7 +20,7 @@ public class Args_Parser {
     static final String COMPOSITION_key = "composition";
 
 
-    private String inputfilename="", outputfilename="";
+    private String inputfilepathName="", outputfilename="", inputfilename="", inputDirectory="";
     private Integer ENZYME=1;
     private Integer k=2;
     private Boolean consider_target_composition=true, isAdaptive=true;
@@ -116,8 +119,15 @@ public class Args_Parser {
                 }
                 else {
                     if (opt.check_valid( )) {
-                        if (key.equals(INPUT_key)) {
-                            inputfilename = opt.value;
+                        if (key.equals(INPUT_key)) {//need to find the directory and filename
+                            inputfilepathName=opt.value;//full path+filename
+                            Path path = Paths.get(opt.value);
+                            Path fileName = path.getFileName();
+                            
+                            inputfilename = fileName.toString();//full filename
+                            int filename_index = inputfilepathName.indexOf(inputfilename);
+                            inputDirectory = inputfilepathName.substring(0, filename_index);
+                            //System.out.println("Input directory: "+inputDirectory);
                             System.out.println("Input filename: " + inputfilename);
                         }
                         else if (key.equals(OUTPUT_key)) {
@@ -176,7 +186,7 @@ public class Args_Parser {
         String prefix="e"+ENZYME+"k"+k+"DBD-";
         if (opt.check_skip()) {
             outputfilename = prefix+inputfilename;
-            //System.out.println(outputfilename);
+            System.out.println(outputfilename);
         }
 
     }
@@ -256,7 +266,7 @@ public class Args_Parser {
                     System.exit(1);
                 }
 
-                value = str;
+                value = args[i];
                 opt.set_value(value);//set in the hash?
 
                 expect_value = false;
@@ -265,10 +275,21 @@ public class Args_Parser {
         }
     }
 
+    String get_inputfilepathName()
+    {
+        return inputfilepathName;
+    }
+    
     String get_inputfilename()
     {
         return inputfilename;
     }
+    
+    String get_inputDirectory()
+    {
+        return inputDirectory;
+    }
+    
 
     Integer get_k()
     {

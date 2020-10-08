@@ -74,7 +74,7 @@ public class deBruijn {
     public static boolean isAdaptive =false;
     
     
-    String inputfilename, outputfilename;
+    String inputfilepathName, inputfilename, outputfilename;
     
     //class variables
     private readFASTA target_fasta_reader;//, decoy_fasta_reader;
@@ -203,11 +203,11 @@ public class deBruijn {
     }
 
 
-    deBruijn (String inputfilename, String outputfilename, int k_a)
+    deBruijn (String inputDirectory, String inputfileName, String outputfilename, int k_a)
     {
         //the constructor assignments
         k=k_a;
-        this.inputfilename=inputfilename;
+        this.inputfilepathName=inputDirectory+inputfileName;
         this.outputfilename=outputfilename;
 
 
@@ -223,7 +223,7 @@ public class deBruijn {
         de_bruijn_decoy_input=new HashMap<>();
         de_bruijn=new HashMap<>();
 
-        de_bruijn_writer=new write_DeBruijn("e"+ENZYME+"k"+k+"deBruijn_template.txt");
+        de_bruijn_writer=new write_DeBruijn(inputDirectory+"e"+ENZYME+"k"+k+"deBruijn_template.txt");
 
         k_index=new int[k+1];
         k_sub=new int[k+1];
@@ -231,10 +231,10 @@ public class deBruijn {
         NO_OF_ENZYME_AA = AA_S[ENZYME].length();
         
         //file reader writer initialization
-        target_fasta_reader = new readFASTA(inputfilename);
+        target_fasta_reader = new readFASTA(this.inputfilepathName);
         //decoy_fasta_reader = new readFASTA(outputfilename);
-        decoy_fasta_writer = new writeFASTA(outputfilename);
-        concat_fasta_writer = new writeFASTA("concat-MQ-"+outputfilename);/* not sure if needed? maybe add a parameter option? */
+        decoy_fasta_writer = new writeFASTA(inputDirectory+outputfilename);
+        concat_fasta_writer = new writeFASTA(inputDirectory+"concat-MQ-"+outputfilename);/* not sure if needed? maybe add a parameter option? */
         
         //
 
@@ -1371,7 +1371,7 @@ public class deBruijn {
         long startTime = System.currentTimeMillis();
         boolean use_input=true;
                
-        //String inputfilename="uniprot-proteomeUP000005640_20180206.fasta";//"";//"uniprot-mus-musculus.fasta";//"uniprot-human-reviewed-Nov-2017-Trypsin.fasta";//"swiss_prot_all_uncompressed_08082018.fasta";//"ups.fasta";//
+        //String inputfilenName="uniprot-proteomeUP000005640_20180206.fasta";//"";//"uniprot-mus-musculus.fasta";//"uniprot-human-reviewed-Nov-2017-Trypsin.fasta";//"swiss_prot_all_uncompressed_08082018.fasta";//"ups.fasta";//
 
 
         ENZYME = TRYPSIN;//NONSPECIFIC;//
@@ -1381,7 +1381,9 @@ public class deBruijn {
         parser.parse_args(args);
         parser.check_args();
 
-        String inputfilename = parser.get_inputfilename();
+        String inputfilenName = parser.get_inputfilename();
+        String inputDirectory = parser.get_inputDirectory();
+        //String inputfilename = parser.get_inputfilename();
         deBruijn.k = parser.get_k();
         ENZYME = parser.get_ENZYME();
 
@@ -1389,7 +1391,7 @@ public class deBruijn {
         
         //give the option to select output file name
         String outputfilename=parser.get_outputfilename();
-        deBruijn generator = new deBruijn(inputfilename, outputfilename, k);//DEBRUIJN_DECOY//
+        deBruijn generator = new deBruijn(inputDirectory, inputfilenName, outputfilename, k);//DEBRUIJN_DECOY//
         
 
         //Step 1 CALCULATE COMPOSITION

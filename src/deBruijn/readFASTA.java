@@ -50,7 +50,7 @@ public class readFASTA {
         }
         catch(FileNotFoundException ex) {
             System.out.println(
-                "Unable to open file '" + 
+                "File not found! Unable to open file '" + 
                 inputfilename + "' to parse");  
             System.exit(1);
         }

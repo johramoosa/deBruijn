@@ -1,2 +1,8 @@
 /build/
 /dist/
+*.properties
+*.fasta
+data/e1k2deBruijn_template.txt
+deBruijn.log
+nbproject/private/private.xml
+nbproject/private/private.xml
